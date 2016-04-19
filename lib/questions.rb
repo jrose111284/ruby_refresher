@@ -15,7 +15,7 @@ end
 
 # remove instances of nil AND false from an array
 def remove_nils_and_false_from_array(array)
-  array.keep_if{|v| v != false && v != nil}
+  array.keep_if{ |v| v != false && v != nil } 
 
 end
 
