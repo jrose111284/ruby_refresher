@@ -114,6 +114,8 @@ end
 # get the average from an array, rounded to the nearest integer
 # so [10, 15, 25] should return 17
 def average_of_array(array)
+  number = array.inject(:+).to_f / array.size
+  return number.ceil
 end
 
 # get all the elements in an array, up until the first element
@@ -161,7 +163,7 @@ end
 # take out all the capital letters from a string
 # so 'Hello JohnDoe' becomes 'ello ohnoe'
 def remove_capital_letters_from_string(string)
-  string.gsub(/[^[:upper:]]+/, "")
+  string.gsub(/[^[:lower:]]/, " ")
 end
 
 # round up a float up and convert it to an Integer,
