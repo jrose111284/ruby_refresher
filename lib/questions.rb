@@ -145,6 +145,10 @@ end
 # . e.g. the array ['cat', 'dog', 'fish'] becomes
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 def get_all_letters_in_array_of_words(array)
+  arr = []
+  array.each do |x| x.split(" ")
+    arr << x
+  end
 end
 
 # swap the keys and values in a hash. e.g.
@@ -186,6 +190,9 @@ end
 # get the domain name *without* the .com part, from an email address
 # so alex@makersacademy.com becomes makersacademy
 def get_domain_name_from_email_address(email)
+  b = email.split('@', 2).last
+  b.split('.', 2).first
+
 end
 
 # capitalize the first letter in each word of a string,
