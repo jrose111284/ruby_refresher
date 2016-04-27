@@ -146,9 +146,11 @@ end
 # ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
 def get_all_letters_in_array_of_words(array)
   arr = []
+  arri = []
   array.each do |x| x.split(" ")
-    arr << x
+    arr << array[x]
   end
+
 end
 
 # swap the keys and values in a hash. e.g.
@@ -225,6 +227,9 @@ end
 # should return true for a 3 dot range like 1...20, false for a
 # normal 2 dot range
 def is_a_3_dot_range?(range)
+   if (1...20).include?(20)
+     return truepec
+  end
 end
 
 # get the square root of a number
